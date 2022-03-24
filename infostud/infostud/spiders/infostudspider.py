@@ -6,6 +6,14 @@ class InfoStudSpider(scrapy.Spider):
     name = 'infostud'
     page_number = 2
     start_urls = ['https://poslovi.infostud.com/oglasi-za-posao']
+    custom_settings = {     # writing data into csv file
+    'FEEDS': {
+      'Infostud_Output_CSV.csv': {
+        'format': 'csv',
+        'overwrite': True
+      }},
+      }
+
 
     def parse(self, response):
 
