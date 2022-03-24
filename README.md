@@ -9,6 +9,7 @@ Crawler should extract the fallowing data from job ad:
 - Job address
 - Job details
 - Publishing date
+
 All extracted job ads data should be stored in non-relational database of your choosing.
 #### Part B (solution located inside of infostudapi directory):
 Create small API that returns job ads from db. Required APIs are:
