@@ -2,7 +2,7 @@ import scrapy
 
 
 class InfostudItem(scrapy.Item):
-
+    id = scrapy.Field()
     job_title = scrapy.Field()
     employer = scrapy.Field()
     job_address = scrapy.Field()
