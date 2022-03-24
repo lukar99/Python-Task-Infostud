@@ -12,5 +12,5 @@ class InfostudPipeline:
         self.collection = db['ads_tb']
 
     def process_item(self, item, spider):
-        self.collection.insert_one(dict(item))
+        self.collection.insert(dict(item))
         return item

@@ -26,5 +26,5 @@ class JobAdsEmployerGenericView(generics.ListAPIView):
 
     def get_queryset(self):
         employer = self.kwargs['pk']
-        return JobAds.objects.filter(employer=employer)
+        return JobAds.objects.filter(employer__contains=employer)
         
